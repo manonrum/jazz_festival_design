@@ -1,56 +1,28 @@
-/* ///////////////////////// */
-/* //TYPOGRAPHIE/////////// */
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* TYPO */
-
-body {
-	
-	font-family: "Inter", sans-serif;
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+font-family: "Roboto", sans-serif;
 }
-
-/* FONT SCALE */
-
 :root{
-	--size-sm: clamp(0.83rem, 0.1vi + 0.81rem, 0.89rem);
-	--size-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
-	--size-md: clamp(1.2rem, 0.7vi + 1.03rem, 1.58rem);
-	--size-lg: clamp(1.44rem, 1.22vi + 1.14rem, 2.11rem);
-	--size-xl: clamp(1.73rem, 1.97vi + 1.23rem, 2.81rem);
-	--size-xxl: clamp(2.07rem, 3.05vi + 1.31rem, 3.75rem);
-	--size-xxxl: clamp(2.49rem, 4.56vi + 1.35rem, 5rem);
+--size-sm: clamp(0.8rem, -0.09vi + 0.82rem, 0.75rem);
+--size-base: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+--size-md: clamp(1.25rem, 0.8vi + 1.05rem, 1.69rem);
+--size-lg: clamp(1.56rem, 1.76vi + 1.12rem, 2.53rem);
+--size-xl: clamp(1.95rem, 3.35vi + 1.12rem, 3.8rem);
+--size-xxl: clamp(2.44rem, 5.92vi + 0.96rem, 5.7rem);
+--size-xxxl: clamp(3.05rem, 9.98vi + 0.56rem, 8.54rem);
 }
 
-/* https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=400&minRatio=1.2&maxFontSize=19&maxWidth=1280&maxRatio=1.333&steps=sm%2Cbase%2Cmd%2Clg%2Cxl%2Cxxl%2Cxxxl&baseStep=base&prefix=size&useContainerWidth=false&includeFallbacks=false&useRems=true&remValue=16&decimals=2&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=1280 */
+.xxxl { font-size: var(--size-xxxl);}
 
-body {
-	font-size: var(--size-base);
+body{
+  font-size: var(--size-base) ;}
+
+h1{ font-size: var(--size-xxl) ;}
+
+p{ letter-spacing: 0.02em;
+line-height: 1;}
+
+img{ max-width: 100%;}
+#affiche { 
+  height: 500px;
 }
-
-h1 { font-size: var(--size-xxxl);}
-
-/* INTERLIGNAGE */
-
- p { line-height: 1.05; }
-
- /* INTERLETTRAGE */
-
- p { letter-spacing: -0.2px; }
- h1 { letter-spacing: -2px; }
-
- /* COULEUR */
-
- :root {	
-	--jazz-pink: hsl(305 100% 69.6%)
-
-}
-
-body { color: var(--jazz-pink);}
-
-/* Mise en page */
-
-img { max-width: 100% ;}
-
-#AFFICHE {height: 300px;} 
